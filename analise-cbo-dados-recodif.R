@@ -1,5 +1,5 @@
 dadosforr= forrag_princ_btv_chap_cbo_certo_mudado
-dadosforr$sp= as.factor(dadosforr$Espécie)
+dadosforr$sp= as.factor(dadosforr$EspÃ©cie)
 summary (dadosforr)
 dadosforr$sp= as.factor(dadosforr$sp)
 dadosforr$site= as.factor(dadosforr$site)
@@ -15,3 +15,4 @@ boxplot( altforrm ~ sp, data=dadosforr)
 dadoscristais <- dadosforr[dadosforr$site == "pc", ]
 boxplot( alturapolm ~ sp, data=dadoscristais)
 boxplot( altforrm ~ sp, data=dadoscristais)
+# ajustar boxplot usando a receita http://www.sthda.com/english/wiki/two-way-anova-test-in-r
